@@ -187,6 +187,15 @@ The refresh token is treated as canonical local state. If multiple apps share th
 - Browser access for normal login, or copy/paste access for `--remote`
 - Network access to `auth.openai.com`
 
+If your terminal says `node: command not found` while testing inside Codex on
+macOS, you can use:
+
+```bash
+/Applications/Codex.app/Contents/Resources/node ./examples/functional-check.js
+```
+
+See [docs/FUNCTIONAL_TESTING.md](docs/FUNCTIONAL_TESTING.md) for the full setup.
+
 ## Source References
 
 - OpenClaw OAuth concept docs: https://github.com/openclaw/openclaw/blob/main/docs/concepts/oauth.md

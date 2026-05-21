@@ -20,6 +20,23 @@ This repository has no runtime npm dependencies. You only need Node.js 20 or new
 node --version
 ```
 
+If your terminal prints `zsh: command not found: node` on macOS while testing
+inside Codex, you can use the Node runtime bundled with the Codex app:
+
+```bash
+/Applications/Codex.app/Contents/Resources/node --version
+```
+
+Then replace `node` with that absolute path in the commands below:
+
+```bash
+/Applications/Codex.app/Contents/Resources/node ./bin/codex-oauth.js doctor
+/Applications/Codex.app/Contents/Resources/node ./examples/functional-check.js
+```
+
+For normal development outside Codex, install Node.js 20 or newer and make sure
+`node` is available in your shell `PATH`.
+
 ## 2. Login
 
 On a desktop machine with a browser:
