@@ -62,8 +62,8 @@ node --test
 Expected result:
 
 ```text
-tests 9
-pass 9
+tests 11
+pass 11
 fail 0
 ```
 

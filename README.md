@@ -4,6 +4,7 @@ Standalone Node.js module for OpenAI Codex / ChatGPT OAuth authentication.
 
 Developer integration guide: [docs/INTEGRATION.md](docs/INTEGRATION.md)
 Functional testing guide: [docs/FUNCTIONAL_TESTING.md](docs/FUNCTIONAL_TESTING.md)
+Korean developer guide: [docs/INTEGRATION.ko.md](docs/INTEGRATION.ko.md)
 
 This project extracts the useful OpenClaw/Hermes pattern into a portable package:
 

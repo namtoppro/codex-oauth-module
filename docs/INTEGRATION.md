@@ -2,6 +2,8 @@
 
 This guide shows how to attach `@namtoppro/codex-oauth-module` to another Node.js project so the project can authenticate with OpenAI Codex OAuth and call the Codex backend.
 
+Korean version: [INTEGRATION.ko.md](INTEGRATION.ko.md)
+
 ## What This Module Gives You
 
 - `codex-oauth` CLI for local login, refresh, token inspection, and diagnostics.
