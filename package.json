@@ -17,12 +17,15 @@
   "files": [
     "bin/",
     "docs/",
+    "examples/",
     "src/",
     "README.md"
   ],
   "scripts": {
     "test": "node --test",
     "doctor": "node ./bin/codex-oauth.js doctor",
+    "functional": "node ./examples/functional-check.js",
+    "functional:refresh": "node ./examples/functional-check.js --refresh",
     "weather": "node ./examples/weather-smoke.js",
     "answer": "node ./examples/answer-smoke.js"
   },

@@ -3,6 +3,7 @@
 Standalone Node.js module for OpenAI Codex / ChatGPT OAuth authentication.
 
 Developer integration guide: [docs/INTEGRATION.md](docs/INTEGRATION.md)
+Functional testing guide: [docs/FUNCTIONAL_TESTING.md](docs/FUNCTIONAL_TESTING.md)
 
 This project extracts the useful OpenClaw/Hermes pattern into a portable package:
 
@@ -143,6 +144,30 @@ node ./examples/answer-smoke.js
 
 By default it asks Codex to reply with `CODEX_OAUTH_OK_4` and exits non-zero if
 that text is not present in the response.
+
+## Functional Test
+
+Use this when you want to verify the whole module on your machine:
+
+```bash
+node ./bin/codex-oauth.js login
+node ./examples/functional-check.js
+```
+
+Expected output ends with:
+
+```text
+CODEX_OAUTH_FUNCTIONAL_OK_7
+PASS Codex OAuth functional check completed.
+```
+
+To also force token refresh before the live request:
+
+```bash
+node ./examples/functional-check.js --refresh
+```
+
+For the full checklist, see [docs/FUNCTIONAL_TESTING.md](docs/FUNCTIONAL_TESTING.md).
 
 ## Design Notes
 

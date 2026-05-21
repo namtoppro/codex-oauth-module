@@ -309,14 +309,18 @@ First verify the module:
 ```bash
 node --test
 node ./bin/codex-oauth.js doctor --json
+node ./examples/functional-check.js
 node ./examples/answer-smoke.js
 ```
 
 Expected live smoke output:
 
 ```text
+CODEX_OAUTH_FUNCTIONAL_OK_7
 CODEX_OAUTH_OK_4
 ```
+
+For a complete local checklist, see [FUNCTIONAL_TESTING.md](FUNCTIONAL_TESTING.md).
 
 For a deterministic local test without real Codex network calls, point examples at a mock server with `--base-url`.
 
