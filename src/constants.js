@@ -1,0 +1,22 @@
+export const CODEX_OAUTH_PROVIDER_ID = "openai-codex";
+export const CODEX_OAUTH_CLIENT_ID = "app_EMoamEEZ73f0CkXaXp7hrann";
+export const CODEX_OAUTH_AUTHORIZE_URL = "https://auth.openai.com/oauth/authorize";
+export const CODEX_OAUTH_TOKEN_URL = "https://auth.openai.com/oauth/token";
+export const CODEX_OAUTH_SCOPE = "openid profile email offline_access";
+export const CODEX_OAUTH_DEFAULT_CALLBACK_HOST = "127.0.0.1";
+export const CODEX_OAUTH_DEFAULT_CALLBACK_PORT = 1455;
+export const CODEX_OAUTH_DEFAULT_CALLBACK_PATH = "/auth/callback";
+export const CODEX_OAUTH_DEFAULT_REDIRECT_URI =
+  "http://localhost:1455/auth/callback";
+export const CODEX_JWT_AUTH_CLAIM = "https://api.openai.com/auth";
+export const CODEX_RESPONSES_BASE_URL = "https://chatgpt.com/backend-api";
+export const CODEX_RESPONSES_PATH = "/codex/responses";
+export const CODEX_DEFAULT_STORE_ENV = "CODEX_OAUTH_STORE";
+export const CODEX_DEFAULT_HOME_ENV = "CODEX_OAUTH_HOME";
+export const DEFAULT_PROFILE_ID = "default";
+export const DEFAULT_ORIGINATOR = "codex-oauth-module";
+export const DEFAULT_REFRESH_SKEW_MS = 60_000;
+export const DEFAULT_LOCK_TIMEOUT_MS = 10_000;
+export const DEFAULT_LOCK_STALE_MS = 30_000;
+export const DEFAULT_REQUEST_TIMEOUT_MS = 30_000;
+export const DEFAULT_MANUAL_FALLBACK_MS = 15_000;

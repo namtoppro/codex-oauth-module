@@ -1,0 +1,40 @@
+{
+  "name": "@namtoppro/codex-oauth-module",
+  "version": "0.1.0",
+  "description": "Standalone OpenAI Codex OAuth module extracted from the OpenClaw/Hermes auth pattern.",
+  "type": "module",
+  "main": "./src/index.js",
+  "types": "./src/index.d.ts",
+  "bin": {
+    "codex-oauth": "./bin/codex-oauth.js"
+  },
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "default": "./src/index.js"
+    }
+  },
+  "files": [
+    "bin/",
+    "docs/",
+    "src/",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "node --test",
+    "doctor": "node ./bin/codex-oauth.js doctor",
+    "weather": "node ./examples/weather-smoke.js",
+    "answer": "node ./examples/answer-smoke.js"
+  },
+  "keywords": [
+    "codex",
+    "oauth",
+    "openai",
+    "chatgpt",
+    "pkce"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  }
+}
