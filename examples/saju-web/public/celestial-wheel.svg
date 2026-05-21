@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-labelledby="title desc">
+  <title id="title">사주 원형 차트</title>
+  <desc id="desc">천간과 지지 흐름을 상징하는 원형 장식</desc>
+  <rect width="240" height="240" rx="24" fill="#f8faf7"/>
+  <circle cx="120" cy="120" r="92" fill="#e4f0ec" stroke="#2f7f70" stroke-width="4"/>
+  <circle cx="120" cy="120" r="66" fill="#ffffff" stroke="#d6ded7" stroke-width="2"/>
+  <circle cx="120" cy="120" r="32" fill="#3a436f"/>
+  <path d="M120 34v172M34 120h172M59 59l122 122M181 59 59 181" stroke="#c7832d" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="120" cy="120" r="92" fill="none" stroke="#1f5f54" stroke-width="2" stroke-dasharray="8 8"/>
+  <g fill="#1f2528" font-family="ui-sans-serif, system-ui, sans-serif" font-size="18" font-weight="700" text-anchor="middle">
+    <text x="120" y="24">목</text>
+    <text x="216" y="126">화</text>
+    <text x="120" y="228">금</text>
+    <text x="24" y="126">수</text>
+  </g>
+  <g fill="#ffffff" font-family="ui-sans-serif, system-ui, sans-serif" font-size="16" font-weight="800" text-anchor="middle">
+    <text x="120" y="116">四柱</text>
+    <text x="120" y="137">TEST</text>
+  </g>
+  <g fill="#a14f5a">
+    <circle cx="120" cy="54" r="6"/>
+    <circle cx="186" cy="120" r="6"/>
+    <circle cx="120" cy="186" r="6"/>
+    <circle cx="54" cy="120" r="6"/>
+  </g>
+</svg>

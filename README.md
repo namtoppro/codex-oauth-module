@@ -169,6 +169,29 @@ node ./examples/functional-check.js --refresh
 
 For the full checklist, see [docs/FUNCTIONAL_TESTING.md](docs/FUNCTIONAL_TESTING.md).
 
+## Saju Test Web
+
+Run a local browser test app that sends birth details to Codex through this OAuth module:
+
+```bash
+node ./bin/codex-oauth.js login
+node ./examples/saju-web/server.js
+```
+
+Open:
+
+```text
+http://127.0.0.1:4177
+```
+
+If your terminal cannot find `node` inside Codex on macOS, use:
+
+```bash
+/Applications/Codex.app/Contents/Resources/node ./examples/saju-web/server.js
+```
+
+See [examples/saju-web/README.md](examples/saju-web/README.md) for options and privacy notes.
+
 ## Design Notes
 
 The OpenClaw source separates three concerns:

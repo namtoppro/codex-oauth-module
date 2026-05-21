@@ -26,6 +26,7 @@
     "doctor": "node ./bin/codex-oauth.js doctor",
     "functional": "node ./examples/functional-check.js",
     "functional:refresh": "node ./examples/functional-check.js --refresh",
+    "saju:web": "node ./examples/saju-web/server.js",
     "weather": "node ./examples/weather-smoke.js",
     "answer": "node ./examples/answer-smoke.js"
   },

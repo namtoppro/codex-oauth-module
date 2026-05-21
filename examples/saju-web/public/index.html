@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Codex OAuth 사주 테스트</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="intro-panel" aria-labelledby="app-title">
+        <img class="wheel" src="/celestial-wheel.svg" alt="사주 테스트 원형 차트" />
+        <div>
+          <p class="eyebrow">Codex OAuth 연결 테스트</p>
+          <h1 id="app-title">간단 사주 풀이</h1>
+          <p class="intro-copy">
+            이름, 생년월일, 성별, 양력/음력을 입력하면 이 모듈의 OAuth 인증으로 Codex에 요청해 짧은 풀이를 받아옵니다.
+          </p>
+        </div>
+        <div class="status-row" id="statusRow">
+          <span class="status-dot" aria-hidden="true"></span>
+          <span id="statusText">OAuth 상태 확인 중</span>
+        </div>
+      </section>
+
+      <section class="workbench" aria-label="사주 입력 및 결과">
+        <form class="input-panel" id="sajuForm">
+          <div class="panel-header">
+            <h2>입력</h2>
+            <p>실제 개인정보 대신 별칭으로 먼저 테스트해보세요.</p>
+          </div>
+
+          <label class="field">
+            <span>이름 또는 별칭</span>
+            <input id="name" name="name" autocomplete="off" maxlength="40" placeholder="예: 테스트" required />
+          </label>
+
+          <div class="field">
+            <span>성별</span>
+            <div class="segmented" role="radiogroup" aria-label="성별">
+              <label><input type="radio" name="gender" value="female" required /> 여성</label>
+              <label><input type="radio" name="gender" value="male" /> 남성</label>
+              <label><input type="radio" name="gender" value="other" /> 기타</label>
+            </div>
+          </div>
+
+          <div class="field">
+            <span>달력 기준</span>
+            <div class="segmented" role="radiogroup" aria-label="양력 음력">
+              <label><input type="radio" name="calendarType" value="solar" checked /> 양력</label>
+              <label><input type="radio" name="calendarType" value="lunar" /> 음력</label>
+            </div>
+          </div>
+
+          <div class="date-grid">
+            <label class="field">
+              <span>생년월일</span>
+              <input id="birthDate" name="birthDate" type="date" required />
+            </label>
+            <label class="field">
+              <span>태어난 시간</span>
+              <input id="birthTime" name="birthTime" type="time" />
+            </label>
+          </div>
+
+          <label class="check-row">
+            <input id="timeUnknown" name="timeUnknown" type="checkbox" />
+            <span>태어난 시간을 모릅니다</span>
+          </label>
+
+          <label class="field">
+            <span>궁금한 점</span>
+            <textarea
+              id="question"
+              name="question"
+              maxlength="240"
+              rows="4"
+              placeholder="예: 요즘 일과 관계 흐름을 가볍게 보고 싶어요"
+            ></textarea>
+          </label>
+
+          <p class="notice">
+            이 웹은 기능 테스트용입니다. 입력값은 로컬 서버를 거쳐 Codex 요청 본문으로 전송됩니다.
+          </p>
+
+          <button class="primary-button" id="submitButton" type="submit">
+            사주 풀이 보기
+          </button>
+        </form>
+
+        <section class="result-panel" aria-live="polite" aria-label="사주 결과">
+          <div class="panel-header">
+            <h2>결과</h2>
+            <p id="resultHint">입력 후 버튼을 누르면 여기에 풀이가 표시됩니다.</p>
+          </div>
+          <div class="result-box" id="resultBox">
+            <div class="empty-state">
+              <strong>아직 결과가 없습니다</strong>
+              <span>OAuth 인증과 Codex 응답이 정상인지 함께 확인합니다.</span>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <script src="/app.js" type="module"></script>
+  </body>
+</html>
