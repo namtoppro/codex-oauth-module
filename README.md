@@ -23,7 +23,19 @@ Use the package directly from this folder during development:
 node ./bin/codex-oauth.js doctor
 ```
 
-When published or linked into another project:
+Install it directly from GitHub in another Node.js project:
+
+```bash
+npm install github:namtoppro/codex-oauth-module
+```
+
+If you prefer SSH:
+
+```bash
+npm install git+ssh://git@github.com/namtoppro/codex-oauth-module.git
+```
+
+When linked or installed into another project:
 
 ```bash
 codex-oauth login
@@ -208,7 +220,7 @@ The refresh token is treated as canonical local state. If multiple apps share th
 
 - Node.js 20+
 - Browser access for normal login, or copy/paste access for `--remote`
-- Network access to `auth.openai.com`
+- Network access to `auth.openai.com` and `chatgpt.com`
 
 If your terminal says `node: command not found` while testing inside Codex on
 macOS, you can use:

@@ -17,6 +17,27 @@ This guide shows how to attach `@namtoppro/codex-oauth-module` to another Node.j
 - Network access to `auth.openai.com` and `chatgpt.com`.
 - A writable credential store path.
 
+## Install From GitHub
+
+The package is available from the public GitHub repository:
+
+```bash
+npm install github:namtoppro/codex-oauth-module
+```
+
+If your environment uses SSH deploy keys:
+
+```bash
+npm install git+ssh://git@github.com/namtoppro/codex-oauth-module.git
+```
+
+Then run the CLI through your project install:
+
+```bash
+npx codex-oauth login --remote
+npx codex-oauth doctor
+```
+
 Default credential store:
 
 ```text

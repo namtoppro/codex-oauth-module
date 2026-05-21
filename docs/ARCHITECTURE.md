@@ -4,6 +4,10 @@
 
 Provide a small module that any Node.js project can embed when it needs Codex OAuth access without importing OpenClaw/Hermes.
 
+The module also includes a minimal Codex Responses streaming helper for smoke
+tests and simple integrations. Larger products can still use only the OAuth
+store, refresh, and header helpers if they have their own response client.
+
 ## Boundaries
 
 - `src/oauth.js`: PKCE, callback server, token exchange, token refresh.
@@ -15,7 +19,7 @@ Provide a small module that any Node.js project can embed when it needs Codex OA
 ## Non-Goals
 
 - Full OpenClaw model routing.
-- WebSocket/SSE response streaming.
+- Full replacement for an app-specific AI gateway.
 - Multi-agent inheritance.
 - Keychain integration.
 
